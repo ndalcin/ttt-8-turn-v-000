@@ -47,5 +47,6 @@ def turn(board)
   elsif valid_move?(board,index) == false
     until valid_move?(board, index) == true
       puts "Invalid turn."
+    end
   end
 end
