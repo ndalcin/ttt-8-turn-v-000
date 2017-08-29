@@ -44,6 +44,8 @@ def turn(board)
   if valid_move?(board,index) == true
     move(board, index, value= "X")
     display_board(board)
-  else
+  elsif valid_move?(board,index) == false
+    until valid_move?(board, index) == true
+      puts "Invalid turn."
   end
 end
